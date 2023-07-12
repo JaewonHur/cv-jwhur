@@ -6,8 +6,7 @@
 
 ## About Me
 
-I am a Ph.D student at Seoul National University (SNU), advised by [Byoungyoung Lee](https://lifeasageek.github.io/) in [Compsec lab](https://compsec.snu.ac.kr). Currently, I am working on privacy enhancing technologies, especially confidential coputing (e.g., Intel SGX, and AMD SEV). More specifically, my research area is on redesigning current big-data, and machine learning platform to protect privacy while preserving efficiency. In addition, I am interesed in various topics in system security such as fuzzing, and software fault isolation.
-
+I am a Ph.D student at Seoul National University (SNU), advised by [Byoungyoung Lee](https://lifeasageek.github.io/) in [Compsed lab](https://compsec.snu.ac.kr). My primary research areas are hardware fuzzing and cloud computing. Especially, I have worked on implementing RTL fuzzer to find bugs in RISC-V CPU designs. Currently, I am working on secure cloud computing technology, so called confidential computing (e.g., Intel SGX, and AMD SEV). To be specific, I am working on re-designing current big-data, and machine learning platform to protect data while preserving efficiency.
 
 ## Research Interests
 
