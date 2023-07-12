@@ -1,6 +1,12 @@
 # Jaewon Hur
 
-![image info](./jwhur.jpg){ width=50% }
+<div style="display: flex; align-items: center;">
+  <img src="./jwhur.jpg" alt="Image" style="width: 200px; margin-right: 10px;">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur, eros eget ultricies aliquet, lacus neque tempor velit, nec cursus nunc metus eu neque.
+</div>
+
+|-|-|
+| ![](./jwhur.jpg){ width=30% } | jlsdfs |
 
 [[email](jwhur19@gmail.com)]
 [[github](https://github.com/JaewonHur)]
