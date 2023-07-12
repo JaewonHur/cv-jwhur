@@ -2,7 +2,7 @@
 
 [[email](jwhur19@gmail.com)]
 [[github](https://github.com/JaewonHur)]
-[[google-scholr](https://scholar.google.com/citations?user=8mqzrSsAAAAJ&hl=ko&oi=ao)]
+[[google-scholor](https://scholar.google.com/citations?user=8mqzrSsAAAAJ&hl=ko&oi=ao)]
 
 ## About Me
 
@@ -11,7 +11,7 @@ I am a Ph.D student at Seoul National University (SNU), advised by [Byoungyoung 
 ## Research Interests
 
 * Confidential Computing (e.g., Intel SGX, and AMD SEV)
-* Privacy Preserving Machine Learning
+* Secure cloud applications
 * Fuzz Testing
 
 ## Education
