@@ -49,7 +49,7 @@ I am a Ph.D student at Seoul National University (SNU), advised by [Byoungyoung 
 
 ## Publications
 
-* **[SysTex 2023]** Graminer: Fuzz Testing Gramine LibOS to Harden the Trusted Computing Base [[pdf](https://jaewonhur.github.io/files/jwhur-graminer.pdf)]\
+* **[SysTEX 2023]** Graminer: Fuzz Testing Gramine LibOS to Harden the Trusted Computing Base [[pdf](https://jaewonhur.github.io/files/jwhur-graminer.pdf)]\
     **Jaewon Hur**, and Byoungyoung Lee
 
 * **[ACM CCS 2022]** SpecDoctor: Differential Fuzz Testing to Find Transient Execution Vulnerabilities [[pdf](https://jaewonhur.github.io/files/jwhur-specdoctor.pdf)]\
