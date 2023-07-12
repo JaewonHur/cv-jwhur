@@ -1,20 +1,34 @@
-# Jaewon Hur
+---
+papersize: a4
+documentclass: article
+header-includes:
+    - \usepackage{multicol}
+    - \newcommand{\hideFromPandoc}[1]{#1}
+    - \hideFromPandoc{
+        \let\Begin\begin
+        \let\End\end
+      }
 
-<div style="display: flex; align-items: center;">
-  <img src="./jwhur.jpg" alt="Image" style="width: 200px; margin-right: 10px;">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur, eros eget ultricies aliquet, lacus neque tempor velit, nec cursus nunc metus eu neque.
-</div>
+...
 
-|-|-|
-| ![](./jwhur.jpg){ width=30% } | jlsdfs |
 
-[[email](jwhur19@gmail.com)]
-[[github](https://github.com/JaewonHur)]
-[[google-scholor](https://scholar.google.com/citations?user=8mqzrSsAAAAJ&hl=ko&oi=ao)]
+Jaewon Hur [![](./email.png){ width=20px }](jwhur19@gmail.com) [![](./github.png){ width=20px }](https://github.com/JaewonHur) [![](./google-scholor.png){ width=20px }](https://scholar.google.com/citations?user=8mqzrSsAAAAJ&hl=ko&oi=ao)
+=================
 
-## About Me
+## About Me 
+
+\Begin{multicols}{2}
+
+![](./jwhur.jpg){ width=180px }
+
 
 I am a Ph.D student at Seoul National University (SNU), advised by [Byoungyoung Lee](https://lifeasageek.github.io/) in [Compsed lab](https://compsec.snu.ac.kr). My primary research areas are hardware fuzzing and cloud computing. Especially, I have worked on implementing RTL fuzzer to find bugs in RISC-V CPU designs. Currently, I am working on secure cloud computing technology, so called confidential computing (e.g., Intel SGX, and AMD SEV). To be specific, I am working on re-designing current big-data, and machine learning platform to protect data while preserving efficiency.
+
+
+\End{multicols}
+
+
+
 
 ## Research Interests
 
