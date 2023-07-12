@@ -49,12 +49,14 @@ I am a Ph.D student at Seoul National University (SNU), advised by [Byoungyoung 
 * **[2023.02 - ]** Designing a secure big-data analysis platform on confidential computing
   * Implemented the framework using [Intel SGX](https://github.com/intel/linux-sgx), and [Spark](https://github.com/apache/spark).
 
+* **[2023.02 - 2023.05]** Fuzzing gramine libos for hardening the TCB inside SGX [code](https://github.com/JaewonHur/syzkaller).
+  * Published a paper to SysTEX 2023 [[paper](https://jaewonhur.github.io/files/jwhur-graminer.pdf)][[slide](https://jaewonhur.github.io/files/jwhur-graminer-slides.pdf)].
+
 * **[2022.11 - ]** Automated stock trading application for the people who always lose their money
   * Published an Android App, [MumeParrot](https://play.google.com/store/apps/details?id=com.mumemume.mumeparrot).
 
 * **[2022.11 - 2023.12]** Redesigning machine-learning platform to protect data
   * Implemented the framework using [AMD SEV](https://github.com/AMDESE/AMDSEV), [Pytorch](https://github.com/pytorch/pytorch), and [grpc](https://github.com/grpc).
-    * Published a paper to SysTEX 2023 [[paper](https://jaewonhur.github.io/files/jwhur-graminer.pdf)][[slide](https://jaewonhur.github.io/files/jwhur-graminer-slides.pdf)].
 
 * **[2021.05 - 2022.10]** Hardware fuzzing to find transient execution vulnerabilities in RISC-V CPUs
   * Implemented the fuzzer using [Verilator](https://github.com/verilator/verilator), [Chipyard](https://github.com/ucb-bar/chipyard), [Chisel](https://github.com/chipsalliance/chisel3), and [Firrtl](https://github.com/chipsalliance/firrtl).
