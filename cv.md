@@ -1,5 +1,7 @@
 # Jaewon Hur
 
+![image info](./jwhur.jpg)
+
 [[email](jwhur19@gmail.com)]
 [[github](https://github.com/JaewonHur)]
 [[google-scholor](https://scholar.google.com/citations?user=8mqzrSsAAAAJ&hl=ko&oi=ao)]
