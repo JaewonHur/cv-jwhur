@@ -1,6 +1,6 @@
 # Jaewon Hur
 
-![image info](./jwhur.jpg)
+![image info](./jwhur.jpg){ width=50% }
 
 [[email](jwhur19@gmail.com)]
 [[github](https://github.com/JaewonHur)]
