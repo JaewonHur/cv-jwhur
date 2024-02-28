@@ -85,6 +85,19 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\pubSubheadingNewline}[4]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \vspace{1pt}
+      \textbf{#1} \\ \vspace{1pt}
+      \textbf{#2} \\ \vspace{1pt}
+      #3 \\
+      \textit{\small#4}
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+
 \newcommand{\resumeSubheading}[5]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -141,15 +154,28 @@
 %------About Me-------
 \section{About Me}
 
-I am currently working as a \textbf{post doctoral researcher} at \textbf{computer security lab} of \textbf{Seoul National University}. I received \textbf{Ph.D} at \textbf{computer security lab}, advised by professor \textbf{Byoungyoung Lee} from 2019 to 2023. Before then, I studied at \textbf{multimedia wireless network lab}, advised by professor \textbf{Sunghyun Choi} since 2017 until 2019.
+I am currently working as a \textbf{post doctoral researcher} at \textbf{Computer Security Lab} of \textbf{Seoul National University}. I received \textbf{Ph.D} at \textbf{Computer Security Lab}, advised by professor \textbf{Byoungyoung Lee} from 2019 to 2023. Before then, I studied at \textbf{multimedia wireless network lab}, advised by professor \textbf{Sunghyun Choi} since 2017 until 2019.
 
-I'm interested in the issues of \textbf{system security} in general, but I focused on two topics during my Ph.D: \textbf{fuzzing}, and \textbf{confidential computing}. As a research, I developed an RTL fuzzer for RISC-V CPUs, named \textbf{DifuzzRTL}, and presented it at \textbf{IEEE S\&P 2021}. In the following research, I developed the first RTL fuzzer that finds transient execution vulnerabilities, named \textbf{SpecDoctor}, presenting it at \textbf{ACM CCS 2022}. After that, I moved to work on \textbf{confidential computing}, especially applying it to solve the issues of data privacy and sovereighty in machine learning. Accordingly, I developed \textbf{FairLearning}, which protects the right of the data owners while training an ML model with the shared traninig data. \textbf{FairLearning} is currently under review at \textbf{Usenix Security 2024}. Besides these, I have conducted, or involved in several research projects such as \textbf{Graminer} (i.e., Gramine LibOS fuzzer), \textbf{TeeMate} (i.e., SGX based confidential serverless computing), \textbf{Laputa} (i.e., secure policy enforcement in Spark), etc.
+I'm interested in the issues of \textbf{system security} in general, but I focused on two topics during my Ph.D: \textbf{fuzzing}, and \textbf{confidential computing}. As a research, I developed an RTL fuzzer for RISC-V CPUs, named \textbf{DifuzzRTL}, and presented it at \textbf{IEEE S\&P 2021}. In the following research, I developed the first RTL fuzzer that finds transient execution vulnerabilities, named \textbf{SpecDoctor}, presenting it at \textbf{ACM CCS 2022}. After that, I moved to work on \textbf{confidential computing}, especially applying it to solve the issues of data privacy and sovereighty in machine learning. Accordingly, I developed \textbf{FairLearning}, which systematically protects the data from being leaked by untrusted machine learners. In addition, I have guided several research projects about cloud security, such as \textbf{TeeMate} (i.e., efficient confidential serverless computing), and \textbf{Laputa} (i.e., secure policy enforcement in Spark), etc. Currently, I am working on virtualization (i.e., \textbf{KVM}), building secure memory sharing framework for the enclaves.
+
+As above, \textbf{I have studied the topics in system security across the various fields, and I am always willing to learn new security issues}. Besides, I generally like programming and solving the problems on my own, so I developed \textbf{MumeParrot}, which automatically trades stocks for me, and \textbf{Kandl}, which is a ChatGPT based course recommendation bot.
 
 \vspace{10pt}
 
 %-----------EXPERIENCE-----------
 \section{Publications}
   \resumeSubHeadingListStart
+
+    \pubSubheadingNewline
+      {Laputa: Secure Data Analytics in Apache Spark with Fine-grained Policy Enforcement}
+      {and Isolated Execution}
+      {Byeongwook Kim, \underline{Jaewon Hur}, Adil Ahmad, and Byoungyoung Lee}
+      {under review}
+
+    \pubSubheading
+      {TeeMate: Enclave Aliasing for SGX-based Confidential Serverless Computing}
+      {Chulmin Lee, \underline{Jaewon Hur}, Sangho Lee, and Byoungyoung Lee}
+      {under review}
 
     \pubSubheading
       {FairLearning: Protecting Training Data from Untrusted Machine Learners}
@@ -198,6 +224,29 @@ I'm interested in the issues of \textbf{system security} in general, but I focus
 \section{Projects}
 
     \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Secure and encrypted memory sharing framework for enclaves}}
+          {Sep. 2023 -- Now}
+
+        \resumeItemListStart
+          \resumeItem
+              {Used language: C}
+          \resumeItem
+              {Used framework: KVM, QEMU, Gramine LibOS}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{ChatGPT based course recommendation bot (Kandl)}}
+          {May. 2023 -- Aug. 2023}
+
+        \resumeItemListStart
+          \resumeItem
+              {Used language: TypeScript, React}
+          \resumeItem
+              {Used framework: ElasticSearch, Redis, Figma, Next.js}
+        \resumeItemListEnd
+
       \resumeProjectHeading
           {\textbf{Fuzzing Gramine LibOS}}
           {Feb. 2023 -- May. 2023}
@@ -212,8 +261,8 @@ I'm interested in the issues of \textbf{system security} in general, but I focus
         \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Automated stock trading application}}
-          {Sep. 2022 -- Jan. 2024}
+          {\textbf{Automated stock trading app (MumeParrot)}}
+          {Sep. 2022 -- Now}
 
         \resumeItemListStart
             \resumeItem
@@ -223,8 +272,30 @@ I'm interested in the issues of \textbf{system security} in general, but I focus
         \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Secure machine learning platform for protecting ownership of the data}}
-          {Mar. 2023 -- Apr. 2024}
+          {\textbf{Secure policy enforcement in data analysis}}
+          {May. 2022 -- Dec. 2023}
+
+        \resumeItemListStart
+            \resumeItem
+                {Used language: Scala}
+            \resumeItem
+                {Used framework: Spark}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Efficient confidential serverless framework}}
+          {May. 2022 -- Dec. 2023}
+
+        \resumeItemListStart
+            \resumeItem
+                {Used language: C, Scala}
+            \resumeItem
+                {Used framework: Gramine LibOS, OpenWhisk}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Secure machine learning platform for data protection}}
+          {Mar. 2022 -- Apr. 2023}
 
         \resumeItemListStart
             \resumeItem
@@ -295,9 +366,9 @@ I'm interested in the issues of \textbf{system security} in general, but I focus
      \textbf{Languages}
      \begin{itemize}
       \item \textit{Knowledgeable:} {C, Python, Scala}
-      \item \textit{Have an experience with:} {Go, C++, Kotlin, Java} \\
+      \item \textit{Have an experience with:} {Go, C++, Kotlin, Java, TypeScript} \\
      \end{itemize}
-     \textbf{Frameworks}{: AFL, syzkaller, QEMU, Docker, Kubernetes, Git, Linux, PyTorch} \\
+     \textbf{Frameworks}{: AFL, syzkaller, QEMU, kvm, Docker, Kubernetes, Git, Linux, PyTorch, React} \\
     }}
 \end{itemize}
 
