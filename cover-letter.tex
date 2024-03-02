@@ -1,0 +1,197 @@
+%-------------------------
+% Resume in Latex
+% Author : Sidratul Muntaha Ahmed
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{graphicx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\cveSubheading}[2]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\pubSubheading}[3]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \vspace{1pt}
+      \textbf{#1} \\ \vspace{1pt}
+      #2 \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\pubSubheadingNewline}[4]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \vspace{1pt}
+      \textbf{#1} \\ \vspace{1pt}
+      \textbf{#2} \\ \vspace{1pt}
+      #3 \\
+      \textit{\small#4}
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\ \vspace{5pt}
+      \textit{\small#3} & \textit{\small #4} \\ 
+      #5 \\ \vspace{4pt}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={$\bullet$}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Jaewon Hur} \textbf{ /  Post Doctoral Researcher} \\ \vspace{10pt}
+    
+    Dept. of Electrical and Computer Engineering \\
+    Seoul National University \\
+    South Korea \\ \vspace{10pt}
+    
+    \small Phone: (+82) 10-2284-1687$|$ Mail: \href{mailto:jwhur19@gmail.com}{\underline{jwhur19@gmail.com}} $|$ 
+    Lab: \href{https://compsec.snu.ac.kr}{\underline{CompSec at SNU}}
+\end{center}
+
+\vspace{15pt}
+%------About Me-------
+\section{Application for the position of XXX}
+
+\vspace{10pt}
+
+Dear Hiring Managers,
+
+\vspace{10pt}
+
+I am writing to express my strong interest in the XXX position at XXX. As a recent Ph.D. graduate with experience in system security, I am excited about the opportunity to bring my expertise to contribute to your team.
+
+\vspace{10pt}
+
+During my Ph.D. candidacy, I developed groundbreaking tools and methodologies presented at top-tier conferences such as IEEE S\&P and ACM CCS. Notably, my research contributions include the development of DifuzzRTL, an RTL fuzzer for RISC-V CPUs, and SpecDoctor, the first RTL fuzzer to identify transient execution vulnerabilities. Even after shifting my focus to cloud and data security, I successfully led research projects such as FairLearning, which systematically protects data from untrusted machine learners. While FairLearning is still under review, I am confident that this research holds significant value and will find a suitable venue soon.
+
+\vspace{10pt}
+
+Additionally, I have demonstrated proficiency in leading research projects with a team, as evidenced by my contributions to TeeMate (i.e., Intel SGX-based efficient confidential serverless computing) and Laputa (i.e., secure policy enforcement in Apache Spark). I spearheaded both projects with original ideas, guiding junior Ph.D. students to completion. These endeavors not only expanded my understanding of cloud data security but also honed my team management skills.
+
+\vspace{10pt}
+
+I am particularly drawn to XXX because of its reputation for cutting-edge technology and commitment to research. I am confident that my expertise in system security, combined with my passion for advancing technology, makes me a valuable asset to your team.
+
+\vspace{10pt}
+
+Thank you for considering my application. I am eager to contribute to XXX’s success and would welcome the opportunity to discuss how my skills and experiences align with your needs. I look forward to the possibility of an interview to further discuss how I can contribute to your team.
+
+\vspace{10pt}
+
+Sincerely,
+
+\vspace{1pt}
+
+\includegraphics[width=0.15\linewidth]{sign.png}
+
+\vspace{1pt}
+
+Jaewon Hur
+
+\vspace{10pt}
+
+%-------------------------------------------
+\end{document}

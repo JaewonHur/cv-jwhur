@@ -1,5 +1,6 @@
 all:
-	pdflatex p.tex
+	pdflatex cv.tex
+	pdflatex cover-letter.tex
 
 clean:
-	rm p.out p.log p.aux
+	rm -rf *.out *.log *.aux *.pdf
