@@ -154,13 +154,51 @@
 %------About Me-------
 \section{About Me}
 
-I have lots of research experiences across the full stack of computer systems. I enjoyed understanding, and refactoring an existing system into a security-oriented system using confidential computing. For example, I refactored current deep learning frameworks (e.g., PyTorch) into a new one for protecting training data, and I also initiated a new Apach Spark architecture for data protection in analysis (i.e., \textbf{DLBox} and \textbf{Secure Spark} presented at \textbf{NDSS 2025}). Furthermore, I also devised a new approach for confidential serverless computing, which drastically improves the latency and throughput (i.e., \textbf{TeeMate}). Not only on applications, but I also have deep knowledge on virtualization, building KVM-based emulation of Intel TDX. Pushing forward, I'm going to design a secure LLM serving system based on this emulation. This will lead to my next interest on the design and optimization of LLM serving system. Besides, I also have experiences on RTL, initiating and publishing several RTL fuzzing papers before (i.e., \textbf{DifuzzRTL} at \textbf{S\&P 2021} and \textbf{SpecDoctor} at \textbf{CCS 2022}). Experiences on bug findings (i.e., \emph{syzkaller} extension for SGX libOS, \textbf{FuzzOrigin}, and \textbf{R2Z2}) helped me deeply think about system bugs, and building secure systems.
+I'm a systems engineer with a strong foundation in virtualization, linux, and confidential computing. I have strong interest in virtualization and its related fields. I have designed OpenTDX, which emulates Intel TDX based on QEMU/KVM, and GPU passthrough framework for AMD SEV-SNP VMs based on VFIO. Besides, I have several research experiences in security fields, including secure TEE IO using MK-TME and IOMMU, cross cache attacks in Linux kernel, secure AI training framework, etc.
 
 \vspace{10pt}
 
-Overall, with broad research experiences on computer systems, I believe I can quickly grasp, find, and solve the issues in emerging systems.
+%-----------PROJECTS-----------
+\section{Projects}
 
+    \resumeSubHeadingListStart
 
+      \resumeProjectHeading
+          {\href{https://github.com/sslab-gatech/open-tdx}{\textbf{\underline{Intel TDX Emulation on QEMU/KVM}}}}
+          {Sep. 2024 -- Now}
+
+        \resumeItemListStart
+          \resumeItem
+              {Used language: C}
+          \resumeItem
+              {Used framework: KVM, QEMU}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\href{https://github.com/JaewonHur/sev-snp-gpu}{\textbf{\underline{Enabling GPU passthrough to AMD SEV-SNP VM}}}}
+          {Aug. 2023 -- Dec. 2023}
+
+        \resumeItemListStart
+            \resumeItem
+                {Used language: Python}
+            \resumeItem
+                {Used framework: QEMU, KVM, vfio, Linux, AMD-SEV}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\href{https://github.com/JaewonHur/graminer}{\textbf{\underline{Fuzzing Gramine LibOS}}}}
+          {Feb. 2023 -- May. 2023}
+
+        \resumeItemListStart
+            \resumeItem
+                {Used language: Go, C}
+            \resumeItem
+                {Used framework: Syzkaller, Gramine LibOS}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\vspace{10pt}
 %-----------EXPERIENCE-----------
 \section{Publications}
   \resumeSubHeadingListStart
@@ -218,131 +256,6 @@ Overall, with broad research experiences on computer systems, I believe I can qu
 
   \resumeSubHeadingListEnd
 
-\vspace{10pt}
-%-----------PROJECTS-----------
-\section{Projects}
-
-    \resumeSubHeadingListStart
-
-      \resumeProjectHeading
-          {\textbf{Emulating Intel TDX Machines}}
-          {Sep. 2024 -- Now}
-
-        \resumeItemListStart
-          \resumeItem
-              {Used language: C}
-          \resumeItem
-              {Used framework: KVM, QEMU}
-          \resumeItem
-              {\href{https://github.com/sslab-gatech/open-tdx}{\underline{I gave a talk to Intel, open-sourcing OpenTDX}}}
-        \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{ChatGPT based course recommendation bot (Kandl)}}
-          {May. 2023 -- Aug. 2023}
-
-        \resumeItemListStart
-          \resumeItem
-              {Used language: TypeScript, React}
-          \resumeItem
-              {Used framework: ElasticSearch, Redis, Figma, Next.js}
-        \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\href{https://github.com/JaewonHur/graminer}{\textbf{\underline{Fuzzing Gramine LibOS}}}}
-          {Feb. 2023 -- May. 2023}
-
-        \resumeItemListStart
-            \resumeItem
-                {Used language: Go, C}
-            \resumeItem
-                {Used framework: Syzkaller, Gramine LibOS}
-            \resumeItem
-                {\textbf{Actively used by Intel engineers}}
-        \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Automated stock trading app (MumeParrot)}}
-          {Sep. 2022 -- Now}
-
-        \resumeItemListStart
-            \resumeItem
-                {Used language: Kotlin}
-            \resumeItem
-                {\textbf{Currently available in Android play store}}
-        \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Secure policy enforcement in Apache Spark}}
-          {May. 2022 -- Dec. 2023}
-
-        \resumeItemListStart
-            \resumeItem
-                {Used language: Scala}
-            \resumeItem
-                {Used framework: Spark}
-        \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Efficient confidential serverless framework}}
-          {May. 2022 -- Dec. 2023}
-
-        \resumeItemListStart
-            \resumeItem
-                {Used language: C, Scala}
-            \resumeItem
-                {Used framework: Gramine LibOS, OpenWhisk}
-        \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Secure machine learning platform for data protection}}
-          {Mar. 2022 -- Apr. 2023}
-
-        \resumeItemListStart
-            \resumeItem
-                {Used language: Python}
-            \resumeItem
-                {Used framework: PyTorch, grpc, QEMU-KVM, vfio, AMD-SEV}
-            \resumeItem
-                {\href{https://github.com/JaewonHur/sev-snp-gpu}{\underline{Running normal Nvidia GPUs in SEV-SNP VMs}}}
-        \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\href{https://github.com/compsec-snu/specdoctor}{\textbf{\underline{CPU fuzzing to find transient execution vulnerabilities}}}}
-          {May. 2021 -- Dec. 2022}
-
-        \resumeItemListStart
-            \resumeItem
-                {Used language: Scala, Chisel}
-            \resumeItem
-                {Used framework: RISC-V Boom, RISC-V NutShell, Firesim, Firrtl}
-        \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Firmware fuzzing to find bugs in Samsung secure element}}
-          {Mar. 2021 -- Feb. 2022}
-
-        \resumeItemListStart
-            \resumeItem
-                {Used language: C}
-            \resumeItem
-                {Used framework: QEMU-KVM}
-        \resumeItemListEnd
-
-
-      \resumeProjectHeading
-          {\href{https://github.com/compsec-snu/difuzz-rtl}{\textbf{\underline{Differential fuzz testing to find CPU bugs}}}}
-          {Sep. 2019 -- May. 2021}
-
-        \resumeItemListStart
-            \resumeItem
-                {Used language: Scala, Chisel}
-            \resumeItem
-                {Used framework: RISC-V Boom, RISC-V Rocket, Firrtl}
-        \resumeItemListEnd
-
-
-    \resumeSubHeadingListEnd
 
 \vspace{6pt}
 %-----------EDUCATION-----------
