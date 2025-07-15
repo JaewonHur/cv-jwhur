@@ -150,7 +150,16 @@
     Lab: \href{https://gts3.org}{\underline{SSLAB at GT}}
 \end{center}
 
-\vspace{15pt}
+\vspace{10pt}
+
+%-----------SUMMARY-------------
+\section{Summary}
+
+Systems researcher with deep expertise in kernel-level virtualization and security.
+Published in S\&P, CCS, and NDSS.
+Experienced in confidential computing (TDX, SEV), fuzzing (CPU, LibOS), and large-scale distributed systems (Spark, serverless).
+
+\vspace{6pt}
 
 %-----------EDUCATION-----------
 \section{Education \& Career}
@@ -176,7 +185,6 @@
       {B.S. in Electronical Engineering}
           
   \resumeSubHeadingListEnd
-
 
 \vspace{6pt}
 
@@ -230,29 +238,13 @@
       {Junyoung Choi, \underline{Jaewon Hur}, and Saewoong Bahk}
       {The 17th IEEE Wireless Communication and Networking Conference (WCNC), April, 2021.}
 
-    \pubSubheading
-      {EV-CAST: Interference and Energy-Aware Video Multicast Exploiting Collaborative Radio}
-      {Yeonchul Shin, \underline{Jaewon Hur}, Gyujin Lee, Jonghoe Koo, Junyoung Choi, Sung-ju Lee, and Sunghyun Choi}
-      {The 16th IEEE international Conference on Mobile Ad-Hoc and Smart Systems (MASS), November, 2019.}
-
   \resumeSubHeadingListEnd
 
-\vspace{10pt}
+\vspace{6pt}
 %-----------PROJECTS-----------
 \section{Projects}
 
     \resumeSubHeadingListStart
-
-      \resumeProjectHeading
-          {\textbf{Building Secure LLM Serving System}}
-          {May. 2025 -- Now}
-
-        \resumeItemListStart
-          \resumeItem
-              {Used language: C, Python}
-          \resumeItem
-              {Used framework: vLLM, PyTorch, KVM}
-        \resumeItemListEnd
 
       \resumeProjectHeading
           {\href{https://github.com/sslab-gatech/open-tdx}{\textbf{\underline{Emulating Intel TDX Machines}}}}
@@ -262,9 +254,44 @@
           \resumeItem
               {Used language: C}
           \resumeItem
-              {Used framework: KVM, QEMU}
+              {Used framework: Linux, KVM, QEMU}
           \resumeItem
-              {I gave a talk to Intel, open-sourcing OpenTDX}
+              {Presented to Intel engineers, OpenTDX adopted internally}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\href{https://github.com/JaewonHur/dlbox}{\textbf{\underline{Building Secure Model Training Framework}}}}
+          {Mar. 2022 -- Apr. 2023}
+
+        \resumeItemListStart
+            \resumeItem
+                {Used language: Python}
+            \resumeItem
+                {Used framework: PyTorch, grpc, QEMU-KVM, vfio, AMD-SEV}
+            \resumeItem
+                {\href{https://github.com/JaewonHur/sev-snp-gpu}{\underline{Normal GPU passthrough to SEV-SNP VMs}}}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Building Secure Apache Spark}}
+          {May. 2022 -- Dec. 2023}
+
+        \resumeItemListStart
+            \resumeItem
+                {Used language: Scala}
+            \resumeItem
+                {Used framework: Spark}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Building Efficient Confidential Serverless Computing}}
+          {May. 2022 -- Dec. 2023}
+
+        \resumeItemListStart
+            \resumeItem
+                {Used language: C, Scala}
+            \resumeItem
+                {Used framework: Gramine LibOS, OpenWhisk}
         \resumeItemListEnd
 
       \resumeProjectHeading
@@ -277,57 +304,11 @@
             \resumeItem
                 {Used framework: Syzkaller, Gramine LibOS}
             \resumeItem
-                {\textbf{Actively used by Intel engineers}}
+                {Used by Gramine LibOS team to find bugs}
         \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Automated stock trading app (MumeParrot)}}
-          {Sep. 2022 -- Now}
-
-        \resumeItemListStart
-            \resumeItem
-                {Used language: Kotlin}
-            \resumeItem
-                {\textbf{Currently available in Android play store}}
-        \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Secure policy enforcement in Apache Spark}}
-          {May. 2022 -- Dec. 2023}
-
-        \resumeItemListStart
-            \resumeItem
-                {Used language: Scala}
-            \resumeItem
-                {Used framework: Spark}
-        \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Efficient confidential serverless framework}}
-          {May. 2022 -- Dec. 2023}
-
-        \resumeItemListStart
-            \resumeItem
-                {Used language: C, Scala}
-            \resumeItem
-                {Used framework: Gramine LibOS, OpenWhisk}
-        \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\href{https://github.com/JaewonHur/dlbox}{\textbf{\underline{Secure deep learning platform for data protection}}}}
-          {Mar. 2022 -- Apr. 2023}
-
-        \resumeItemListStart
-            \resumeItem
-                {Used language: Python}
-            \resumeItem
-                {Used framework: PyTorch, grpc, QEMU-KVM, vfio, AMD-SEV}
-            \resumeItem
-                {\href{https://github.com/JaewonHur/sev-snp-gpu}{\underline{Running normal Nvidia GPUs in SEV-SNP VMs}}}
-        \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\href{https://github.com/compsec-snu/specdoctor}{\textbf{\underline{CPU fuzzing to find transient execution vulnerabilities}}}}
+          {\href{https://github.com/compsec-snu/specdoctor}{\textbf{\underline{Fuzzing CPU to find transient execution vulnerabilities}}}}
           {May. 2021 -- Dec. 2022}
 
         \resumeItemListStart
@@ -360,7 +341,6 @@
                 {Used framework: RISC-V Boom, RISC-V Rocket, Firrtl}
         \resumeItemListEnd
 
-
     \resumeSubHeadingListEnd
 
 \vspace{6pt}
@@ -369,11 +349,7 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     {\item{
-     \textbf{Languages}
-     \begin{itemize}
-      \item \textit{Knowledgeable:} {C, Python, Scala, Dart}
-      \item \textit{Have an experience with:} {Go, C++, Kotlin, Java, TypeScript, Rust} \\
-     \end{itemize}
+     \textbf{Languages:}{C, Python, Scala, Dart, Go, C++, Kotlin, Java, TypeScript, Rust} \\
      \textbf{Frameworks}{: AFL, syzkaller, QEMU, KVM, Spark, Docker, Kubernetes, Git, Linux, PyTorch, React} \\
     }}
 \end{itemize}
